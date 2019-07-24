@@ -1,0 +1,289 @@
+ Спецификация */
+
+body {	
+	/*font-family: 'PT Sans', sans-serif;*/
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 400;
+	color: #000;
+}
+
+h2 {
+	text-align: center; 
+}
+
+h3 {
+	font-weight: 400;
+}
+
+.title {
+	margin-bottom: 70px;
+}
+
+.title__main {
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.title__sub {
+	font-size: 16px;
+	text-align: center;	
+}
+
+.title__text {
+	font-size: 14px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.yellow {
+	color: #fcdb00;
+}
+
+/* header */
+
+.header {
+	background: linear-gradient(rgba(0, 0, 0, 0.5),
+								rgba(0, 0, 0, 0.5)
+								),
+	url(../img/home_backgr.png) no-repeat;
+	background-size: cover;	
+	color: #eee;	
+	padding-top: 40px;	
+	background-position: top center;	
+}
+
+.logo {
+	font-size: 24px;
+}
+
+.menu {
+	margin-top: 8px;
+}
+
+.menu__item {
+	margin-right: 30px;
+
+}
+
+.menu__item a {
+	font-size: 14px;
+	font-weight: 400;
+	color: #eee;
+	text-decoration: none;	
+}
+
+.menu__item a:hover {
+	transition: 0.7s;	
+	color: #4ee;
+	cursor: pointer;
+}
+
+.offer {
+	margin-top: 260px;
+	margin-bottom: 260px;
+	text-align: center;
+}
+
+.offer__title {
+	margin-bottom: 20px;
+	color: #eee;
+	font-size: 48px;	
+}
+
+.offer__text {	
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+.offer__btn {	
+	font-size: 16px;
+	color: #eee;	
+	padding: 10px 0;
+	width: 175px;	
+	border-color: #eee;
+}
+
+.offer__btn:hover {	
+	transition: 0.7s;	
+	color: #4ee;	
+	cursor: pointer;
+}
+
+
+/*  services  */
+
+.services {
+	text-align: center;
+	margin-bottom: 180px;
+}
+
+.services__title {
+	font-size: 20px;
+	margin-top: 100px;
+	margin-bottom: 15px;
+}
+
+.services__intro {
+	font-size: 16px;
+}
+
+.services__text {
+	font-size: 14px;
+	margin-bottom: 70px;	
+}
+
+.FA_icon {
+	margin-bottom: 20px;
+}
+
+
+/*  aboutUs  */
+
+.aboutUs {	
+	margin-bottom: 100px;
+}
+
+.aboutUs img {	
+	margin-bottom: 20px;
+}
+
+/* works */
+
+.works {
+	margin-bottom: 100px;
+}
+
+.works nav {
+	margin-bottom: 70px;
+}
+
+.works .menu__item a {
+	font-size: 16px;
+	font-weight: 400;
+	color: #222;	
+}
+
+.works .menu__item a:hover {
+	transition: 0.7s;
+	color: #11e;
+	cursor: pointer;
+}
+
+.works img {
+	margin: 0 10px 20px 0;
+}
+
+/* talk */
+
+.talk {
+	background: linear-gradient(rgba(192, 48, 28, 0.6),
+								rgba(192, 48, 28, 0.6)
+								),
+	url(../img/Layer_29.png) no-repeat;
+	background-size: cover;
+	color: #eee;	
+	background-position: top center;
+	margin-bottom: 100px;
+}
+
+.talk__title {
+	padding: 100px 0 50px 0;
+	font-size: 30px;
+	color: #fff;	
+}
+
+.talk__btn {	
+	font-size: 18px;
+	color: #c0301c;
+	margin-bottom: 100px;
+	padding: 17px 0;
+	width: 180px;	
+	background: #fff;	
+}
+
+
+/* call */
+
+.callmain {
+	margin-bottom: 75px;
+}
+
+.call__blog {
+	padding: 0 0 0 40px;
+}
+
+.call__text {
+	font-size: 14px;
+	padding: 25px 0 50px 0;
+}
+
+
+/* footer */
+
+footer {
+	background: #c0301c;	
+	padding: 100px;
+	color: #fff;
+	font-size: 12px;
+}
+
+footer img {
+	margin-bottom: 20px;
+}
+
+
+/* медиазапросы */
+
+@media screen and (max-width: 1200px) {
+	.callmain {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.call__blog {
+		/*display: block;*/
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		justify-content: center;
+	}
+	.date {
+		display: block;
+		margin: 10px auto 10px
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.logo {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.aboutUs img, .works img {
+		display: block;
+		margin: 10px auto 10px;
+	}
+}
+
+@media screen and (max-width: 576px) {	
+	.menu {
+		text-align: center;
+		flex-direction: column;		
+	}
+	.menu__item {
+		margin: 0;
+	}
+	.offer {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	}
+}
