@@ -1,4 +1,7 @@
- Спецификация */
+/* Спецификация */
+html {
+	scroll-behavior: smooth;
+}
 
 body {	
 	/*font-family: 'PT Sans', sans-serif;*/
@@ -51,10 +54,10 @@ h3 {
 /* header */
 
 .header {
-	background: linear-gradient(rgba(0, 0, 0, 0.5),
-								rgba(0, 0, 0, 0.5)
+	background: linear-gradient(rgba(0, 0, 0, 0),
+								rgba(0, 0, 0, 0)
 								),
-	url(../img/cosm.png) no-repeat;
+	url(../img/welcome.jpg) no-repeat;
 	background-size: cover;	
 	color: #eee;	
 	padding-top: 40px;	
@@ -172,17 +175,6 @@ h3 {
 }
 
 
-/*  aboutUs  */
-
-.aboutUs {	
-	margin-bottom: 100px;
-}
-
-.aboutUs img {	
-	margin-bottom: 20px;
-}
-
-
 /* talk */
 
 .talk {
@@ -237,7 +229,7 @@ h3 {
 
 .map {
 	padding: 0 50px;
-	width: 100%;
+	width: 80%;
 	height: 400px;	
 }
 
@@ -277,20 +269,32 @@ h3 {
 
 /* chat */
 
-.chat {background: #eee;
+.chat {
+	height: auto;
+	padding: 40px 0;
+	background: #eee;
+	overflow-y: hidden;
+}
+
+.chat iframe {
+	border: 0px; 
+	height: 900px;	  
+	resize: both;
+	overflow-y: hidden;
+	  
 }
 
 /* footer */
 
 footer {
 	background: #c0301c;	
-	padding: 100px;
+	padding: 20px;
 	color: #fff;
 	font-size: 12px;
 }
 
 footer img {
-	margin-bottom: 20px;
+	margin: 20px;
 }
 
 
