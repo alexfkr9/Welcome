@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Titele</title>
+</head>
+
+<style type="text/css">
+
+	body {
+		background-image: url(Fon.jpg);
+		background-size: cover;
+		color: blue;		
+	}
+		
+	div {
+		position: relative;
+    	height: 50px;
+	}
+
+	.block {
+		margin: 0;
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	-ms-transform: translate(-50%, -50%);
+    	transform: translate(-50%, -50%);
+	}	
+	
+	.navBut {	
+		font: bold 20px verdana, sans-serif;
+		margin: 50px 60px;
+		padding: 20px 20px;
+		width: 75px;
+		border: solid 5px green;
+		border-radius: 25px;
+		background-color: yellow;
+		transform: scale(2);
+		transition-duration: 0.7s;		
+	}
+
+	.navBut:hover {
+		background-color: magenta;		
+	}
+
+</style>
+
+<body>
+
+<script>
+function a() {new Audio("a.wav").play()}
+function b() {new Audio("b.wav").play()}
+function c() {new Audio("c.wav").play()}
+function d() {new Audio("d.wav").play()}
+function e() {new Audio("e.wav").play()}
+function f() {new Audio("f.wav").play()}
+function g() {new Audio("g.wav").play()}
+function h() {new Audio("h.wav").play()}
+function i() {new Audio("i.wav").play()}
+</script>
+
+
+<div>	
+	<div class="block">
+		<h2 align="center">Наведи мышью на кнопку,<br>чтобы услышать звук!</h2>
+	<table>
+		<tr>			
+			<td><input type="button" class="navBut" value=" a " onmouseover="a()"></td>
+			<td><input type="button" class="navBut" value=" b " onmouseover="b()"></td>
+			<td><input type="button" class="navBut" value=" c " onmouseover="c()"></td>
+		</tr>
+		<tr>	
+			<td><input type="button" class="navBut" value=" d " onmouseover="d()"></td>
+			<td><input type="button" class="navBut" value=" e " onmouseover="e()"></td>
+			<td><input type="button" class="navBut" value=" f " onmouseover="f()"></td>
+		</tr>	
+		<tr>
+			<td><input type="button" class="navBut" value=" g " onmouseover="g()"></td>
+			<td><input type="button" class="navBut" value=" h " onmouseover="h()"></td>
+			<td><input type="button" class="navBut" value=" i " onmouseover="i()"></td>
+		</tr>
+	</table>		
+	</div>
+</div>
+</body>
+</html>
